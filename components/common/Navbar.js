@@ -11,7 +11,7 @@ import {
 
 export default function NavBar() {
   return (
-    <Navbar className="flex justify-between items-center w-[70rem] h-[5rem] border-[#FFF25066] bg-[#0B2404] border-[1px] rounded-[3rem] absolute top-20 z-10 left-1/2 -translate-x-1/2">
+    <Navbar className="flex justify-between items-center w-[70rem] h-[5rem] border-[#FFF25066] bg-[#0B2404] border-[1px] rounded-[3rem] absolute top-20 z-10 left-1/2 -translate-x-1/2 px-4">
       <NavbarBrand>
         <Image
           src="/logo.svg"
