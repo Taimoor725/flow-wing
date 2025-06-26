@@ -8,6 +8,9 @@ import Services from '@/components/Service/Services'
 import Image from 'next/image'
 import Feature from '@/components/Feature/Feature'
 import Stats from '@/components/Feature/States'
+import Exeicution from '@/components/exeicution/Exeicution'
+import Contact from '@/components/Contact/Contact'
+import Footer from '@/components/common/Footer'
 
 function page() {
     return (
@@ -16,6 +19,9 @@ function page() {
             <Services/>
             <Feature/>
             <Stats/>
+            <Exeicution/>
+            <Contact/>
+            <Footer/>
         </div>
     )
 }

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroui/input": "^2.4.22",
     "@heroui/react": "^2.7.11",
     "framer-motion": "^12.19.1",
     "next": "15.3.4",
