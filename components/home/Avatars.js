@@ -1,4 +1,4 @@
-import { Image } from '@heroui/react';
+import Image from 'next/image';
 import React from 'react';
 
 function Avatars() {
@@ -9,14 +9,23 @@ function Avatars() {
                 <div className='h-full relative w-1/2'>
                     <Image
                         src="/avtar/2.jpg"
-                        className="min-w-16 min-h-16 rounded-full object-cover  absolute left-44 top-1/2  z-[10] border-gray-400 border-1"
+                        width={60}
+                        height={60}
+                        alt='avtars'
+                        className="min-w-16 min-h-16 rounded-full object-cover  absolute left-44 z-[10] border-gray-400 border-1"
                     />
                     <Image
                         src="/avtar/3.jpg"
+                        width={60}
+                        height={60}
+                        alt='avtars'
                         className="min-w-16 min-h-16 rounded-full object-cover absolute left-52 z-[20] border-gray-400 border-1"
                     />
                     <Image
                         src="/avtar/1.jpg"
+                        width={60}
+                        height={60}
+                        alt='avtars'
                         className="min-w-16 min-h-16 rounded-full object-cover absolute left-60 z-[30] border-gray-400 border-1"
                     />
                 </div>
