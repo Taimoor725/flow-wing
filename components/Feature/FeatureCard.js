@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function FeatureCard({item}) {
   return (
-    <Card className="w-[22vw] h-[50vh] border-[gray]/30 border-[1px] rounded-[20px] bg-white flex flex-col gap-5">
+    <Card className="lg:w-[22vw] w-full lg:h-[50vh] border-[gray]/30 border-[1px] rounded-[20px] bg-white flex flex-col gap-5">
       <CardBody className="">
         <Image
           alt="Card background"

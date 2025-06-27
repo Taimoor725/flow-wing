@@ -19,17 +19,17 @@ export default Services
 const ButtonUI = () => {
     return (
         <div className="w-screen h-auto justify-center items-center flex flex-col gap-12">
-            <Button className='mt-40 flex justify-center items-center bg-white w-[12rem] h-[4rem] shadow-2xl border-[1px] border-gray-300 rounded-4xl hover:cursor-pointer'>
-                <Image src="/icons/bolt.svg" alt='service-button' width={100} height={100} className='w-12 h-12 object-cover' />
-                <div className='text-2xl font-extralight text-[#0B2404]'>Services</div>
+            <Button className='lg:mt-40 mt-20 flex justify-center items-center bg-white lg:w-[12rem] w-[10rem] lg:h-[4rem] h-[3rem] shadow-2xl border-[1px] border-gray-300 rounded-4xl hover:cursor-pointer'>
+                <Image src="/icons/bolt.svg" alt='service-button' width={100} height={100} className='lg:w-12 lg:h-12 h-9 w-9 object-cover' />
+                <div className='lg:text-2xl text-xl font-extralight text-[#0B2404]'>Services</div>
             </Button>
 
             {/* testimonials  */}
-            <div className='flex flex-col w-[70%] justify-center items-center gap-10'>
-                <div className=' text-8xl font-extrabold text-[#0B2404] flex justify-center items-center'>
+            <div className='flex flex-col lg:w-[70%] justify-center items-center gap-10'>
+                <div className=' lg:text-8xl text-4xl font-extrabold text-[#0B2404] flex justify-center items-center'>
                     What We Build
                 </div>
-                <div className=' text-center text-2xl font-extralight text-[#0B2404CC] w-[65%]'>
+                <div className=' text-center lg:text-2xl text-lg font-extralight text-[#0B2404CC] lg:w-[65%] lg:px-0 px-3'>
                     We craft blockchain systems that power industries, secure users, and push the edge of innovation.
                 </div>
             </div>
@@ -51,7 +51,7 @@ const CardDetails1 = [
 const CardSection = () => {
     return (
         <div className='w-screen h-auto flex flex-col gap-5 justify-center items-center px-32 _bg-[red] mt-10'>
-            <div className='w-full flex gap-5 justify-center _bg-[green]'>
+            <div className='lg:w-full w-[90vw] flex lg:flex-row flex-col gap-5 justify-center _bg-[green]'>
                 {
                     CardDetails.map((item, index) => {
                         return (
@@ -60,7 +60,9 @@ const CardSection = () => {
                     })
                 }
             </div>
-            <div className='w-full flex gap-8 justify-center _bg-[pink]'>
+
+
+            <div className='lg:w-full w-[90vw] flex lg:flex-row flex-col gap-8 justify-center _bg-[pink]'>
                 {
                     CardDetails1.map((item, index) => {
                         return (
@@ -69,7 +71,7 @@ const CardSection = () => {
                     })
                 }
             </div>
-            <div className='w-full flex justify-center mt-10 mb-32'>
+            <div className='lg:w-full w-[90vw] flex justify-center mt-10 lg:mb-32 mb-16'>
                 <Button
                     color="primary"
                     href="#"

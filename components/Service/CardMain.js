@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CardMain({item , props}) {
   return (
-    <Card className={`w-[33vw] h-[45vh] border-[#5EDD4D]/30 border-[1px] rounded-[20px] bg-white flex flex-col gap-5 ${props}`}>
+    <Card className={`lg:w-[33vw] lg:h-[45vh] border-[#5EDD4D]/30 border-[1px] rounded-[20px] bg-white flex flex-col gap-5 ${props}`}>
       <CardBody className="">
         <Image
           alt="Card background"

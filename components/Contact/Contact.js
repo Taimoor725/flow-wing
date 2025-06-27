@@ -4,20 +4,20 @@ import Image from 'next/image'
 
 function Contact() {
     return (
-        <div className='w-screen h-[60vh] flex justify-center items-center relative overflow-hidden'>
-            <div className='w-[75%] h-auto flex flex-col justify-center items-center gap-8 z-[10]'>
-                <div className='text-7xl font-bold text-[#0B2404] text-center'>
+        <div className='w-screen lg:h-[60vh] flex justify-center items-center relative overflow-hidden  lg:py-0 py-10'>
+            <div className='lg:w-[75%] w-[90vw] h-auto flex flex-col justify-center items-center gap-8 z-[10]'>
+                <div className='lg:text-7xl text-4xl  font-bold text-[#0B2404] text-center'>
                     Get started in 5 minutes. <br/>Scale without limits
                 </div>
-                <div className='text-lg font-light text-[#0B2404B2]'>
+                <div className='lg:text-lg text-base _bg-[red] text-center font-light text-[#0B2404B2]'>
                     Lorem ipsum is placeholder text commonly used in the graphic.
                 </div>
-                <div className='flex mt-10 gap-8'>
+                <div className='flex lg:flex-row flex-col mt-10 lg:gap-8 gap-3'>
                     <Button
                         color="primary"
                         href="#"
                         variant="flat"
-                        className="bg-[#0B2404] text-[#B1EC02] font-semibold w-[11rem] text-lg flex justify-center items-center gap-2 py-8 rounded-full hover:cursor-pointer"
+                        className="bg-[#0B2404] text-[#B1EC02] font-semibold lg:w-[11rem] text-lg flex justify-center w-[90vw] items-center gap-2 lg:py-8 py-7 rounded-full hover:cursor-pointer"
                         endContent={<Image src="/icons/arrowgreen.svg" width={60} height={60} alt='how-it-works-icon' className="w-5 object-contain" />}
                     >
                         Contact us
@@ -30,7 +30,7 @@ function Contact() {
                         color="primary"
                         href="#"
                         variant="flat"
-                        className="_bg-[#B1EC02] text-black font-semibold w-[14rem] text-lg flex justify-center items-center gap-2 py-8 rounded-full hover:cursor-pointer border-[2px] border-black"
+                        className="_bg-[#B1EC02] text-black font-semibold lg:w-[14rem] w-[90vw] text-lg flex justify-center items-center gap-2 lg:py-8 py-7 rounded-full hover:cursor-pointer border-[2px] border-black"
                         endContent={<Image src="/icons/arrow.svg" alt='arrow-icon' width={60} height={60} className="w-5 object-contain" />}
                     >
                         Explore Our Service

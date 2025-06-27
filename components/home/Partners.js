@@ -14,16 +14,16 @@ function Partners() {
   return (
     <div className="w-full flex justify-center items-end ">
       <div className="w-[90%] h-[15vh] flex flex-col items-center  gap-5 p-4 rounded-xl">
-        <div className="text-xl font-medium text-[#FFFFFF66] ">
+        <div className="text-xl text-[#FFFFFF66] font-light">
           Our practices are trusted by
         </div>
-        <div className="flex justify-center items-center gap-7 flex-wrap">
+        <div className="flex justify-center items-center gap-7 lg:flex-wrap">
           {logos.map((src, index) => (
             <Image
               key={index}
               src={src}
               alt="Partner logo"
-              className="w-52 object-cover"
+              className="lg:w-52 min-w-28 object-cover lg:transalte-x-0 translate-x-16"
             />
           ))}
         </div>
