@@ -6,7 +6,7 @@ import CardMain from './CardMain'
 
 function Services() {
     return (
-        <div className='w-screen h-auto'>
+        <div className='w-screen h-auto' id='service'>
             <ButtonUI />
             <CardSection />
         </div>

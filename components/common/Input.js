@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function InputField() {
   return (
-    <div className="flex items-center w-[90%] max-w-md mx-auto h-16 px-6 rounded-full bg-[#FFFFFF1A] border border-[#3d5c4c] shadow-lg font-inter">
+    <div className="flex items-center lg:w-[90%] w-full lg:min-h-16 h-14 px-6 rounded-full bg-[#FFFFFF1A] border border-[#3d5c4c] shadow-lg font-inter">
 
       <input
         type="email"

@@ -12,7 +12,7 @@ export default function ExecutionCard3() {
                 <Image
                     alt="Card background"
                     className="h-full w-full object-cover"
-                    src={"/execution/cards/card1.svg"}
+                    src={"/execution/cards/card3.svg"}
                     width={1000}
                     height={700}
                 />

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function Contact() {
     return (
-        <div className='w-screen lg:h-[60vh] flex justify-center items-center relative overflow-hidden  lg:py-0 py-10'>
+        <div className='w-screen lg:h-[60vh] flex justify-center items-center relative overflow-hidden  lg:py-0 py-10' id="contact">
             <div className='lg:w-[75%] w-[90vw] h-auto flex flex-col justify-center items-center gap-8 z-[10]'>
                 <div className='lg:text-7xl text-4xl  font-bold text-[#0B2404] text-center'>
                     Get started in 5 minutes. <br/>Scale without limits
