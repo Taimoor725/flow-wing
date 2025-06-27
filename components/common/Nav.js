@@ -30,16 +30,16 @@ export default function Nav() {
       {/* Main Navbar */}
       <Navbar className="flex justify-between items-center lg:w-[70rem] w-[95%] lg:h-[5rem] h-[3.5rem] border-[#FFF25066] bg-[#0B2404] border-[1px] rounded-[3rem] lg:fixed absolute lg:top-16 top-20 z-[99] left-1/2 -translate-x-1/2 lg:px-4 px-0">
         <NavbarBrand>
-          <Link color="foreground" href="/home#home" className="text-[#F9FFFAB2]">
+          <Link color="foreground" href="/#home" className="text-[#F9FFFAB2]">
             <Image src="/logo.svg" alt="FlowWing" className="lg:w-40 w-28" />
           </Link>
         </NavbarBrand>
 
         <NavbarContent className="hidden sm:flex gap-8 text-xl font-extralight" justify="center">
-          <NavbarItem><Link href="/home#service" className="text-[#F9FFFAB2]">Services</Link></NavbarItem>
-          <NavbarItem><Link href="/home#project" className="text-[#F9FFFAB2]">Projects</Link></NavbarItem>
-          <NavbarItem><Link href="/home#feature" className="text-[#F9FFFAB2]">About</Link></NavbarItem>
-          <NavbarItem><Link href="/home#contact" className="text-[#F9FFFAB2]">Contact</Link></NavbarItem>
+          <NavbarItem><Link href="/#service" className="text-[#F9FFFAB2]">Services</Link></NavbarItem>
+          <NavbarItem><Link href="/#project" className="text-[#F9FFFAB2]">Projects</Link></NavbarItem>
+          <NavbarItem><Link href="/#feature" className="text-[#F9FFFAB2]">About</Link></NavbarItem>
+          <NavbarItem><Link href="/#contact" className="text-[#F9FFFAB2]">Contact</Link></NavbarItem>
         </NavbarContent>
 
         <NavbarContent justify="end">
@@ -93,10 +93,10 @@ export default function Nav() {
 
           {/* Nav Links */}
           <div className="flex flex-col gap-6 mt-20 text-white text-2xl font-light self-start">
-            <Link href="/home#service" onClick={closeMobileMenu}>Services</Link>
-            <Link href="/home#project" onClick={closeMobileMenu}>Projects</Link>
-            <Link href="/home#feature" onClick={closeMobileMenu}>About</Link>
-            <Link href="/home#contact" onClick={closeMobileMenu}>Contact</Link>
+            <Link href="/#service" onClick={closeMobileMenu}>Services</Link>
+            <Link href="/#project" onClick={closeMobileMenu}>Projects</Link>
+            <Link href="/#feature" onClick={closeMobileMenu}>About</Link>
+            <Link href="/#contact" onClick={closeMobileMenu}>Contact</Link>
             <Button
               as={Link}
               href="/quote"

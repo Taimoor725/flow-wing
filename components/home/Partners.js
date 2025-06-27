@@ -12,12 +12,12 @@ function Partners() {
   ];
 
   return (
-    <div className="w-full flex justify-center items-end ">
-      <div className="w-[90%] h-[15vh] flex flex-col items-center  gap-5 p-4 rounded-xl">
+    <div className="w-full flex justify-center items-end lg:-translate-y-0 -translate-y-14">
+      <div className="w-[90%] h-[15vh] flex flex-col items-center lg:gap-5 gap-3 p-4 rounded-xl">
         <div className="text-xl text-[#FFFFFF66] font-light">
           Our practices are trusted by
         </div>
-        <div className="flex justify-center items-center gap-7 lg:flex-wrap">
+        <div className="flex justify-center items-center lg:gap-7 gap-5">
           {logos.map((src, index) => (
             <Image
               key={index}

@@ -54,7 +54,7 @@ const Stats = () => {
 
 
             <Image src={'/feature/states/statesbg2.svg'} width={1000} height={1000} alt='states-bg-patches' className='h-[45vh] absolute right-[-40%]  top-1/2 -translate-1/2 lg:block hidden'/>
-            <Image src={'/feature/states/mob-bg-2.svg'} width={500} height={500} alt='states-bg-patches' className='h-[45vh] absolute right-[-70%]  top-[78%] -translate-1/2 lg:hidden block'/>
+            <Image src={'/feature/states/mob-bg-2.svg'} width={500} height={500} alt='states-bg-patches' className='h-[45vh] absolute right-[-70%] top-[76.5%] -translate-1/2 lg:hidden block'/>
 
 
         </div>
