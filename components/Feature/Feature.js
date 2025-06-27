@@ -6,7 +6,7 @@ import Stats from "./States"
 function Feature() {
     return (
         <div className='w-screen h-auto _bg-[#0B2404] relative'>
-            <Image src={'/feature/feature-bg.svg'} alt="feature-bg" width={1000} height={700} className="w-screen lg:h-[175vh] h-[465vh] object-cover absolute top-0 left-0 z-[0]"/>
+            <Image src={'/feature/feature-bg.svg'} alt="feature-bg" width={1000} height={700} className="w-screen lg:h-[175vh] h-[455vh] object-cover absolute top-0 left-0 z-[0]"/>
             <ButtonUI />
             <CardSection />
         </div>

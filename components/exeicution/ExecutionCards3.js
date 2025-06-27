@@ -1,7 +1,7 @@
 import { Card, CardHeader, CardBody } from "@heroui/react";
 import Image from "next/image";
 
-export default function ExecutionCard1() {
+export default function ExecutionCard3() {
     return (
         <Card className="lg:w-[90%] w-[90vw] lg:h-[50vh] flex lg:flex-row flex-col border border-[#5EDD4D]/30 lg:rounded-[40px] rounded-[20px] bg-white overflow-hidden relative shadow-2xl">
 

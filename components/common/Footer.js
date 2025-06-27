@@ -3,16 +3,16 @@ import Image from 'next/image';
 import InputField from './Input';
 import { Button, Chip } from '@heroui/react';
 
-
 export default function Footer() {
     return (
-        <footer className="w-full h-[75vh] bg-[#0B2404] text-white pt-28 px-28 flex flex-col gap-8 relative">
-            <div className='w-full h-2/3 flex gap-20'>
-                {/* subscriber box */}
-                <div className='flex flex-col gap-2 w-[20vw] h-[35vh] bg-[#0AAB15]/10 border rounded-3xl border-[#0AAB151A] justify-center items-center'>
+        <footer className="w-full bg-[#0B2404] text-white pt-20 px-6 lg:px-28 flex flex-col gap-12 relative">
+            {/* Top Sections (Subscribe + Columns) */}
+            <div className='w-full flex flex-col lg:flex-row gap-12 lg:gap-20'>
+                {/* Subscribe box */}
+                <div className='w-full lg:w-[20vw] h-auto lg:h-[35vh] bg-[#0AAB15]/10 border border-[#0AAB151A] rounded-3xl flex flex-col justify-center items-center p-6 gap-4'>
                     <Image src={"/logo1.svg"} alt='logo1' width={100} height={100} className='w-12 object-cover' />
-                    <div className='flex flex-col justify-center items-center mb-3'>
-                        <div className='text-base font-medium text-white'>Don’t miss and update</div>
+                    <div className='flex flex-col items-center text-center gap-1 mb-2'>
+                        <div className='text-base font-medium'>Don’t miss and update</div>
                         <div className='text-base font-light text-[#FFFFFF99]'>Lorem ipsum is placeholder text.</div>
                     </div>
                     <InputField />
@@ -20,70 +20,66 @@ export default function Footer() {
                         color="primary"
                         href="#"
                         variant="flat"
-                        className="bg-[#0B2404] text-[#B1EC02] font-semibold w-[90%] text-lg flex justify-center items-center gap-2 py-8 rounded-full hover:cursor-pointer border border-[#B1EC02]"
+                        className="bg-[#0B2404] text-[#B1EC02] font-semibold w-full lg:w-[90%] text-lg flex justify-center items-center gap-2 py-4 lg:py-8 rounded-full hover:cursor-pointer border border-[#B1EC02]"
                         endContent={<Image src="/icons/arrowgreen.svg" width={60} height={60} alt='how-it-works-icon' className="w-5 object-contain" />}
                     >
                         Subscribe
                     </Button>
                 </div>
 
-
-                <ServiceColume />
-                <ProjectsColume />
-                <CompanyColume />
+                {/* Info Columns */}
+                <div className="flex flex-col lg:flex-row w-full gap-12">
+                    <ServiceColume />
+                    <ProjectsColume />
+                    <CompanyColume />
+                </div>
             </div>
 
-
-            {/* contact info section  */}
-
-            <div className='w-full flex _bg-[red] justify-between items-center'>
+            {/* Contact info section */}
+            <div className='w-full flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6'>
+                {/* Socials */}
                 <div className='flex gap-5'>
-                    <Chip className=' w-14 h-14 rounded-full bg-[#0AAB15]/10 flex justify-center items-center border border-[#0AAB151A]'>
-                        <Image src={"/footer/social1.svg"} width={100} height={100} alt='social-icon' className=' w-7 h-7 object-cover'/>
-                    </Chip>
-                    <Chip className=' w-14 h-14 rounded-full bg-[#0AAB15]/10 flex justify-center items-center border border-[#0AAB151A]'>
-                        <Image src={"/footer/social2.svg"} width={100} height={100} alt='social-icon' className=' w-7 h-7 object-cover'/>
-                    </Chip>
-
-                    <Chip className=' w-14 h-14 rounded-full bg-[#0AAB15]/10 flex justify-center items-center border border-[#0AAB151A]'>
-                        <Image src={"/footer/social3.svg"} width={100} height={100} alt='social-icon' className=' w-7 h-7 object-cover'/>
-                    </Chip>
-
-                    <Chip className='w-14 h-14 rounded-full bg-[#0AAB15]/10 flex justify-center items-center border border-[#0AAB151A]'>
-                        <Image src={"/footer/social4.svg"} width={100} height={100} alt='social-icon' className=' w-7 h-7 object-cover'/>
-                    </Chip>
+                    {["social1", "social2", "social3", "social4"].map((icon, i) => (
+                        <Chip key={i} className='w-14 h-14 rounded-full bg-[#0AAB15]/10 flex justify-center items-center border border-[#0AAB151A]'>
+                            <Image src={`/footer/${icon}.svg`} width={100} height={100} alt='social-icon' className='w-7 h-7 object-cover' />
+                        </Chip>
+                    ))}
                 </div>
 
-                <div className='flex gap-3'>
-                    <Button className='flex rounded-full px-4 items-center gap-3 py-7  bg-[#0AAB15]/10 border border-[#0AAB151A]'>
-                        <Image src={"/footer/phone.svg"} width={100} height={100} alt='social-icon' className=' w-7 h-7 object-cover'/>
-                        <div className='flex-grow-1 text-xl text-[#FFFFFF99] font-light'>+111 222 3333</div>
+                {/* Phone + Email */}
+                <div className='flex flex-col sm:flex-row gap-4'>
+                    <Button className='flex rounded-full px-4 items-center gap-3 py-4 bg-[#0AAB15]/10 border border-[#0AAB151A]'>
+                        <Image src={"/footer/phone.svg"} width={100} height={100} alt='social-icon' className='w-6 h-6 object-cover' />
+                        <div className='text-base lg:text-xl text-[#FFFFFF99] font-light'>+111 222 3333</div>
                     </Button>
 
-                    <Button className='flex rounded-full px-4 items-center gap-3 py-7 bg-[#0AAB15]/10 border border-[#0AAB151A]'>
-                        <Image src={"/footer/mail.svg"} width={100} height={100} alt='social-icon' className=' w-7 h-7 object-cover'/>
-                        <div className='flex-grow-1 text-xl text-[#FFFFFF99] font-light'>contact@flowwing.io</div>
+                    <Button className='flex rounded-full px-4 items-center gap-3 py-4 bg-[#0AAB15]/10 border border-[#0AAB151A]'>
+                        <Image src={"/footer/mail.svg"} width={100} height={100} alt='social-icon' className='w-6 h-6 object-cover' />
+                        <div className='text-base lg:text-xl text-[#FFFFFF99] font-light'>contact@flowwing.io</div>
                     </Button>
                 </div>
             </div>
 
-            {/* Line */}
+            {/* Divider */}
             <div className='w-full h-[1px] bg-[#FFFFFF1A]'></div>
 
-            <div className='w-full _bg-[red] h-[10vh] flex items-center justify-between'>
-                <div className='text-xl font-light text-[#FFFFFF99]'>
+            {/* Footer bottom row */}
+            <div className='w-full flex flex-col sm:flex-row justify-between items-center gap-4'>
+                <div className='text-sm lg:text-xl font-light text-[#FFFFFF99] text-center'>
                     Copyright © 2025 Flow Wing Lab.
                 </div>
-                <Image src={"/footer/flag.svg"} alt='flag' width={100} height={100} className='w-10 object-cover'/>
-                <div className='text-xl font-light text-[#FFFFFF99]'>
+                <Image src={"/footer/flag.svg"} alt='flag' width={100} height={100} className='w-8 lg:w-10 object-cover' />
+                <div className='text-sm lg:text-xl font-light text-[#FFFFFF99] text-center'>
                     Terms & Conditions • Privacy Policy
                 </div>
             </div>
 
-            <Image src={"/footer/bg.svg"} alt='footer bg' width={1000} height={500} className=' object-cover absolute bottom-0 left-1/2 -translate-x-1/2'/> 
+            {/* Background decoration */}
+            <Image src={"/footer/bg.svg"} alt='footer bg' width={1000} height={500} className='object-cover absolute bottom-0 left-1/2 -translate-x-1/2' />
         </footer>
     );
 }
+
 
 
 
