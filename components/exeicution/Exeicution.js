@@ -25,7 +25,7 @@ const ButtonUI = () => {
       </Button>
 
       <div className='flex flex-col w-[70%] justify-center items-center gap-10'>
-        <div className='lg:text-8xl text-4xl lg:w-auto w-[90vw] font-extrabold text-[#0B2404] flex justify-center items-center'>
+        <div className='lg:text-7xl text-4xl lg:w-auto w-[90vw] font-extrabold text-[#0B2404] flex justify-center items-center'>
           Proof of Execution
         </div>
         <div className='text-center lg:text-2xl text-base font-extralight text-[#0B2404CC] lg:w-[65%] w-[90vw]'>
