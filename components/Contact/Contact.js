@@ -30,7 +30,7 @@ function Contact() {
                         color="primary"
                         href="#"
                         variant="flat"
-                        className="_bg-[#B1EC02] text-black font-semibold lg:w-[14rem] w-[90vw] text-lg flex justify-center items-center gap-2 lg:py-8 py-7 rounded-full hover:cursor-pointer border-[2px] border-black"
+                        className="_bg-[#B1EC02] text-black font-semibold lg:w-[15rem] w-[90vw] text-lg flex justify-center items-center gap-2 lg:py-8 py-7 rounded-full hover:cursor-pointer border-[2px] border-black"
                         endContent={<Image src="/icons/arrow.svg" alt='arrow-icon' width={60} height={60} className="w-5 object-contain" />}
                     >
                         Explore Our Service
