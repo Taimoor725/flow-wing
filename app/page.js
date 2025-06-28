@@ -31,45 +31,59 @@ export default page
 
 const LandingPage = () => {
   return (
-    <div className="w-screen lg:h-screen h-screen relative overflow-hidden" id="home">
-
+    <div className="w-screen h-screen relative overflow-hidden" id="home">
       {/* Background Layer */}
-      <div className="w-screen h-screen absolute inset-0 -z-[0] sec">
+      <div className="absolute inset-0 -z-0 w-full h-full">
         <Image
           src="/main.svg"
           alt="main-banner"
-          width={2000}
-          height={2000}
-          className="w-screen h-full object-cover"
+          fill
+          className="object-cover"
         />
       </div>
 
       {/* Foreground/Main Content */}
-      <div className="flex flex-col w-full h-full justify-center gap-10 items-center relative z-[20] main">
-        <div className='mt-32 flex justify-center items-center lg:mr-0 mr-10 '>
-        <Avatars text="Blockchain Agency" />
+      <div className="relative z-20 flex flex-col items-center justify-center w-full h-full px-4 lg:px-0 text-center gap-6">
+        {/* Avatar Label */}
+        <div className="mt-28 lg:mt-32 lg:-translate-x-10">
+          <Avatars text="Blockchain Agency" />
         </div>
-        <Text />
+
+        {/* Title & Description */}
+        <div className="space-y-3">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight text-white">
+            Engineering Blockchains <br className="hidden lg:block" />
+            <span className="text-[#B1EC02]">For Enterprises</span>
+          </h1>
+          <p className="text-sm sm:text-base lg:text-lg text-white/80 max-w-xl mx-auto">
+            Launch powerful, frictionless Web3 experiences in days —
+            <strong> not months</strong>.<br />
+            Seamless, secure, and enterprise-grade, built to scale without limits.
+          </p>
+        </div>
+
+        {/* Button */}
         <Button
           as={Link}
-          color="primary"
           href="#"
           variant="flat"
-          className="bg-[#B1EC02] text-black font-semibold w-[15rem] text-lg flex justify-center items-center gap-2 py-7 rounded-full hover:cursor-pointer"
+          className="bg-[#B1EC02] text-black font-semibold w-[14rem] sm:w-[15rem] text-base sm:text-lg py-5 sm:py-7 rounded-full flex items-center justify-center gap-2"
           endContent={
             <Image
               src="/icons/arrow.svg"
               alt="arrow-icon"
               width={60}
               height={60}
-              className="w-5 object-contain"
+              className="w-4 sm:w-5 object-contain"
             />
           }
         >
-          Explore Our Service
+          Explore Our Services
         </Button>
-        <div className='mt-10'>
-        <Partners />
+
+        {/* Partner Logos */}
+        <div className="mt-6 sm:mt-10">
+          <Partners />
         </div>
       </div>
     </div>
@@ -78,9 +92,3 @@ const LandingPage = () => {
 
 
 
-
-// const Details=()=>{
-//     return(
-
-//     )
-// }

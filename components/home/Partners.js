@@ -12,18 +12,27 @@ function Partners() {
   ];
 
   return (
-    <div className="w-full flex justify-center items-end lg:-translate-y-0 -translate-y-14">
-      <div className="w-[90%] h-[15vh] flex flex-col items-center lg:gap-5 gap-3 p-4 rounded-xl">
-        <div className="text-xl text-[#FFFFFF66] font-light">
+    <div className="w-full flex justify-center items-end lg:translate-y-0 -translate-y-10">
+      <div className="w-[90%] flex flex-col items-center gap-3 lg:gap-5 p-4 rounded-xl">
+        
+        {/* Heading */}
+        <div className="text-sm sm:text-base lg:text-xl text-[#FFFFFF66] font-light text-center">
           Our practices are trusted by
         </div>
-        <div className="flex justify-center items-center lg:gap-7 gap-5">
+
+        {/* Logos Row */}
+        <div className="flex justify-center items-center gap-5 lg:gap-7">
           {logos.map((src, index) => (
             <Image
               key={index}
               src={src}
-              alt="Partner logo"
-              className="lg:w-52 min-w-28 object-cover lg:transalte-x-0 translate-x-16"
+              alt={`Partner logo ${index + 1}`}
+              className={`
+                object-contain
+                transition-transform duration-300
+                lg:w-40 w-24
+                ${index > 2 ? 'hidden lg:inline-block' : ''}
+              `}
             />
           ))}
         </div>

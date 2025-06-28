@@ -4,7 +4,7 @@ import React from 'react';
 function Avatars({text}) {
     return (
        
-            <div className=" lg:w-[40rem] w-[37rem] h-[4rem] flex justify-center items-center ">
+            <div className=" lg:w-[40rem] w-[37rem] h-[4rem] flex lg:flex-row flex-col justify-center items-center ">
                 {/* Overlapping Avatars for dasktop*/} 
                 <div className='h-full relative w-1/2 items-center  lg:block hidden'>
                     <Image
@@ -33,27 +33,27 @@ function Avatars({text}) {
 
 
                 {/* Overlapping Avatars for mobile*/} 
-                <div className='h-full relative w-1/2 items-center lg:hidden block'>
+                <div className='h-full relative w-1/2 justify-center items-center lg:hidden block'>
                     <Image
                         src="/avtar/2.jpg"
                         width={60}
                         height={60}
                         alt='avtars'
-                        className="lg:min-w-16 lg:min-h-16 w-10 h-10 rounded-full object-cover  absolute left-44 top-3 z-[10] border-gray-400 border-1"
+                        className="lg:min-w-16 lg:min-h-16 w-10 h-10 rounded-full object-cover  absolute left-24 top-[-3%] z-[10] border-gray-400 border-1"
                     />
                     <Image
                         src="/avtar/3.jpg"
                         width={60}
                         height={60}
                         alt='avtars'
-                        className=" lg:min-w-16 lg:min-h-16 w-10 h-10 rounded-full top-3 object-cover absolute left-52 z-[20] border-gray-400 border-1"
+                        className=" lg:min-w-16 lg:min-h-16 w-10 h-10 rounded-full top-[-3%] object-cover absolute left-32 z-[20] border-gray-400 border-1"
                     />
                     <Image
                         src="/avtar/1.jpg"
                         width={60}
                         height={60}
                         alt='avtars'
-                        className=" lg:min-w-16 lg:min-h-16 w-10 h-10 rounded-full object-cover top-3 absolute left-60 z-[30] border-gray-400 border-1"
+                        className=" lg:min-w-16 lg:min-h-16 w-10 h-10 rounded-full object-cover top-[-%3] absolute left-40 z-[30] border-gray-400 border-1"
                     />
                 </div>
 

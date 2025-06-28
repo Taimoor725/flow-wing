@@ -50,8 +50,8 @@ const CardDetails1 = [
 
 const CardSection = () => {
     return (
-        <div className='w-screen h-auto flex flex-col gap-5 justify-center items-center px-32 _bg-[red] mt-10'>
-            <div className='lg:w-full w-[90vw] flex lg:flex-row flex-col gap-5 justify-center _bg-[green]'>
+        <div className='w-screen h-auto flex flex-col gap-5 justify-center items-center _bg-[red] mt-10'>
+            <div className='w-[90vw] lg:w-[100vw] flex lg:flex-row flex-col gap-5 justify-center _bg-[green]'>
                 {
                     CardDetails.map((item, index) => {
                         return (
