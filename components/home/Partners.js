@@ -21,7 +21,7 @@ function Partners() {
         </div>
 
         {/* Logos Row */}
-        <div className="flex justify-center items-center gap-5 lg:gap-7">
+        <div className="flex justify-center items-center gap-5 lg:gap-7 lg:translate-x-0 translate-x-10">
           {logos.map((src, index) => (
             <Image
               key={index}
@@ -30,7 +30,7 @@ function Partners() {
               className={`
                 object-contain
                 transition-transform duration-300
-                lg:w-40 w-24
+                lg:w-40 min-w-28
                 ${index > 2 ? 'hidden lg:inline-block' : ''}
               `}
             />
